@@ -1,0 +1,5 @@
+[Celery]
+broker_url = redis://
+result_backend = disabled://
+worker_pool = celery_pool_asyncio:TaskPool
+
