@@ -8,7 +8,7 @@ This small project explains, how and why to use [celery-pool-asyncio](https://py
 Structure
 --------
 
-There are three entrypoints containing the tasks with the same signatures and doing the same thing, but implemented in different way. Each of them contain two tasks. I want to explain why task inheritance is so important. Just imagine, you have to implement another 3 crawler tasks. You can compare ways and choose the most pretty to extend.
+There are three entrypoints containing the tasks with the same signatures and doing the same thing, but implemented in a different way. Each of them contain two tasks. I want to explain why task inheritance is so important. Just imagine, you have to implement another 3 crawler tasks. You can compare ways and choose the most pretty to extend.
 
 
 [Way 1: Simple Tasks](https://github.com/kai3341/celery-decorator-taskcls-example/blob/master/step_01_simple_tasks.py)
