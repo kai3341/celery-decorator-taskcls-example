@@ -20,4 +20,9 @@ You can launch worker by following command:
 celery worker -P celery_pool_asyncio:TaskPool -A step_01_simple_tasks
 ```
 
-There is no inheritance here. Just imagine -- you have to change behavior of these tasks. For example, you have to check response status code and retry the http request if response status is not equals 200. To reach it, you have to change the code of each task. Then imagine, you have 10 crawler tasks, and you have to change each of them. 
+There is no inheritance here. Just imagine -- you have to change behavior of these tasks. For example, you have to check response status code and retry the http request if response status is not equals 200. To reach it, you have to change the code of each task. Then imagine, the number of tasks is not 2, but 10, and you have to change each of them. Did you hear about [The Last Line Effect](https://www.viva64.com/en/b/0260/)? A mistake will definitely be made.
+
+![Code Quality](https://hsto.org/getpro/habr/post_images/df2/7f4/bcd/df27f4bcd139790b322570ee2f48e1ab.png)
+
+*Image source: [PVS-Studio corporate article](https://habr.com/en/company/pvs-studio/blog/472492/)*
+
