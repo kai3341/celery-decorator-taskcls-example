@@ -14,7 +14,7 @@ There are three entrypoints containing the tasks with the same signatures and do
 [Way 1: Simple Tasks](https://github.com/kai3341/celery-decorator-taskcls-example/blob/master/step_01_simple_tasks.py)
 --------
 
-You can launch worker by following command:
+You can launch a worker by the following command:
 
 ```
 celery worker -P celery_pool_asyncio:TaskPool -A step_01_simple_tasks
@@ -29,7 +29,7 @@ There is no inheritance here. Just imagine -- you have to change behavior of the
 [Way 2: Inheritance](https://github.com/kai3341/celery-decorator-taskcls-example/blob/master/step_02_inheritance.py)
 --------
 
-You can launch worker by following command:
+You can launch a worker by the following command:
 
 ```
 celery worker -P celery_pool_asyncio:TaskPool -A step_02_inheritance
@@ -44,7 +44,7 @@ It's much better. The same behavior is implemented by the same code. But look to
 [Way 3: The `taskcls` idea](https://github.com/kai3341/celery-decorator-taskcls-example/blob/master/step_03_taskcls_idea.py)
 --------
 
-You can launch worker by following command:
+You can launch a worker by the following command:
 
 ```
 celery worker -P celery_pool_asyncio:TaskPool -A step_03_taskcls_idea
