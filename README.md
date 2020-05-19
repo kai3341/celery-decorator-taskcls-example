@@ -54,4 +54,4 @@ It looks like boilerplate problem has been solved
 
 ![Difference](https://camo.githubusercontent.com/86d73c65187de35c988dfa361f007f1b63e1cc52/68747470733a2f2f686162726173746f726167652e6f72672f776562742f6f722f746f2f71642f6f72746f71646964616e62727631647470636231643578647275302e706e67)
 
-You can also pass default `**kwargs` like `bind = True`, timeouts and other via nested class `MetaTask`, which can be also inherited. More about is available in the [docs](https://pypi.org/project/celery-decorator-taskcls/).
+You can also pass default `**kwargs` like `bind = True`, timeouts and other via nested class `MetaTask`, which can be also inherited. More about it is available in the [docs](https://pypi.org/project/celery-decorator-taskcls/) and [habrahabr post](https://habr.com/ru/post/470547/).
