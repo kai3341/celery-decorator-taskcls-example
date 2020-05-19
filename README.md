@@ -40,3 +40,18 @@ It's much better. The same behavior is implemented by the same code. But look to
 ![Code Quality](https://import.viva64.com/docx/blog/0644_Haiku_3/image1.png)
 
 *Image source: [PVS-Studio corporate article](https://habr.com/en/company/pvs-studio/blog/461253/)*
+
+[Way 3: The `taskcls` idea](https://github.com/kai3341/celery-decorator-taskcls-example/blob/master/step_03_taskcls_idea.py)
+--------
+
+You can launch worker by following command:
+
+```
+celery worker -P celery_pool_asyncio:TaskPool -A step_03_taskcls_idea
+```
+
+It looks like boilerplate problem has been solved
+
+![Difference](https://camo.githubusercontent.com/86d73c65187de35c988dfa361f007f1b63e1cc52/68747470733a2f2f686162726173746f726167652e6f72672f776562742f6f722f746f2f71642f6f72746f71646964616e62727631647470636231643578647275302e706e67)
+
+You can also pass default `**kwargs` like `bind = True`, timeouts and other via nested class `MetaTask`, which can be also inherited. More about is available in the [docs](https://pypi.org/project/celery-decorator-taskcls/).
