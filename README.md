@@ -26,3 +26,17 @@ There is no inheritance here. Just imagine -- you have to change behavior of the
 
 *Image source: [PVS-Studio corporate article](https://habr.com/en/company/pvs-studio/blog/472492/)*
 
+[Way 2: Inheritance](https://github.com/kai3341/celery-decorator-taskcls-example/blob/master/step_02_inheritance.py)
+--------
+
+You can launch worker by following command:
+
+```
+celery worker -P celery_pool_asyncio:TaskPool -A step_02_inheritance
+```
+
+It's much better. The same behavior is implemented by the same code. But look to the [bottom of file](https://github.com/kai3341/celery-decorator-taskcls-example/blob/master/step_02_inheritance.py#L47). The Copy-Paste problem is not solved, and there are mistakes will be happened here.
+
+![Code Quality](https://import.viva64.com/docx/blog/0644_Haiku_3/image1.png)
+
+*Image source: [PVS-Studio corporate article](https://habr.com/en/company/pvs-studio/blog/461253/)*
