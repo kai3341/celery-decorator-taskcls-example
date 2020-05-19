@@ -35,7 +35,7 @@ You can launch worker by following command:
 celery worker -P celery_pool_asyncio:TaskPool -A step_02_inheritance
 ```
 
-It's much better. The same behavior is implemented by the same code. But look to the [bottom of file](https://github.com/kai3341/celery-decorator-taskcls-example/blob/master/step_02_inheritance.py#L47). The Copy-Paste problem is not solved, and there are mistakes will be happened here.
+It's much better. The same behavior is implemented by the same code. But look to the [bottom of file](https://github.com/kai3341/celery-decorator-taskcls-example/blob/master/step_02_inheritance.py#L47). The Copy-Paste problem is not solved, and there are mistakes will be happened here. The second probles is implementing of one thing (class based task) requires 2 entities -- handler class and launcher function.
 
 ![Code Quality](https://import.viva64.com/docx/blog/0644_Haiku_3/image1.png)
 
