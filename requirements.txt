@@ -2,4 +2,4 @@ aiohttp==3.6.2
 celery==4.3.0
 celery-decorator-taskcls==0.1.4
 celery-pool-asyncio==0.2.0
-lxml==4.6.2
+lxml==4.6.3
